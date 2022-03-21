@@ -12,12 +12,12 @@ no-entrypoint = []
 test-bpf = []
 
 [dependencies]
-solana-program = "1.7.11"
+solana-program = { git = "https://github.com/solana-labs/solana", branch="master" }
 spl-token = { version = "3.2", path = "../../token/program", features = ["no-entrypoint"] }
 
 [dev-dependencies]
-solana-program-test = "1.7.11"
-solana-sdk = "1.7.11"
+solana-program-test = { git = "https://github.com/solana-labs/solana", branch="master" }
+solana-sdk = { git = "https://github.com/solana-labs/solana", branch="master" }
 
 [lib]
 crate-type = ["cdylib", "lib"]
